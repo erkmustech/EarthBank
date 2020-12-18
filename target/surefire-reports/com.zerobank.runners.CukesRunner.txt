@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.zerobank.runners.CukesRunner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 1, Time elapsed: 35.737 s <<< FAILURE! - in com.zerobank.runners.CukesRunner
+Accounts Activity page(Navigating to specific accounts in Accounts Activity)  Time elapsed: 3.345 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#user_login"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Determination.local', ip: 'fe80:0:0:0:db:ef29:909c:a261%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/s8/fthk759n7l7...}, goog:chromeOptions: {debuggerAddress: localhost:62689}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 599080f29f50544ca9f61f9648714168
+*** Element info: {Using=id, value=user_login}
+

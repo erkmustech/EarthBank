@@ -1,0 +1,443 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-18T19:13:13.943Z",
+        "before": [
+          {
+            "result": {
+              "duration": 818624,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "log in as a \"authorized user\"",
+        "description": "",
+        "id": "only-authorized-users-should-be-able-to-login;log-in-as-a-\"authorized-user\"",
+        "after": [
+          {
+            "result": {
+              "duration": 121130048,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6431895154,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1399865643,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user enter the valid credential and login",
+            "match": {
+              "location": "LoginStepDefs.the_user_enter_the_valid_credential_and_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3030931047,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the dashboard open and the title should be contain\"Zero - Account Summary\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Summary\"",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginStepDefs.the_dashboard_open_and_the_title_should_be_contain(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T19:13:24.974Z",
+        "before": [
+          {
+            "result": {
+              "duration": 147850,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "blank username or password",
+        "description": "",
+        "id": "only-authorized-users-should-be-able-to-login;blank-username-or-password",
+        "after": [
+          {
+            "result": {
+              "duration": 86732011,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3320327049,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1065362,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Users enter blank username or password to login",
+            "match": {
+              "location": "LoginStepDefs.users_enter_blank_username_or_password_to_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1068120,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user should not be able to login",
+            "match": {
+              "location": "LoginStepDefs.the_user_should_not_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@no"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T19:13:28.396Z",
+        "before": [
+          {
+            "result": {
+              "duration": 261716,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "invalid username or password",
+        "description": "",
+        "id": "only-authorized-users-should-be-able-to-login;invalid-username-or-password",
+        "after": [
+          {
+            "result": {
+              "duration": 110182162,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2909479855,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2255932,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enter invalid information to login",
+            "match": {
+              "location": "LoginStepDefs.user_enter_invalid_information_to_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 674830,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "error message  Login id or password are wrong should be displayed",
+            "match": {
+              "location": "LoginStepDefs.error_message_Login_id_or_password_are_wrong_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T19:13:31.428Z",
+        "before": [
+          {
+            "result": {
+              "duration": 421559,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "wrong usename or wrong password",
+        "description": "",
+        "id": "only-authorized-users-should-be-able-to-login;wrong-usename-or-wrong-password",
+        "after": [
+          {
+            "result": {
+              "duration": 112013457,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2851781795,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 770252,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the users enter wrong username or wrong password to login",
+            "match": {
+              "location": "LoginStepDefs.the_users_enter_wrong_username_or_wrong_password_to_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 722691,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should not be able to login",
+            "match": {
+              "location": "LoginStepDefs.user_should_not_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T19:13:34.404Z",
+        "before": [
+          {
+            "result": {
+              "duration": 77219,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Login as a user",
+        "description": "",
+        "id": "only-authorized-users-should-be-able-to-login;login-as-a-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 115503537,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2847954134,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1550890603,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the user logs in using \"username\" and \"password\" and login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 38
+                }
+              ],
+              "location": "LoginStepDefs.the_user_logs_in_using_and_and_login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3014237052,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the dashboard open and the title should be contain\"Zero - Account Summary\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Summary\"",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginStepDefs.the_dashboard_open_and_the_title_should_be_contain(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Only authorized users should be able to login",
+    "description": "",
+    "id": "only-authorized-users-should-be-able-to-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  }
+]
